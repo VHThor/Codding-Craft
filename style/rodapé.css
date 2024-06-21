@@ -1,0 +1,81 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    }
+
+
+.bi-github{
+    color: rgba(194, 194, 194, 0.863);
+    font-size: 1.375rem;
+    transition: 0.3s ease-in-out;
+}
+
+.bi-github:hover {
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.bi-instagram {
+    color: rgba(194, 194, 194, 0.863);
+    font-size: 1.375rem;
+    transition: 0.3s ease-in-out;
+
+}
+
+.bi-instagram:hover {
+    color: white;
+    margin-bottom: 1.25rem;
+
+}
+
+.footer-container2, .footer-container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.313rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid rgba(85, 85, 85, 0.829);
+    border-right: 1px solid rgba(85, 85, 85, 0.829);
+    height: auto;
+    width: 7rem;
+    padding: 0rem 1rem ;
+}
+.footer-container1 {
+    display: flex;
+    justify-content: center;
+    font-size: 0.938rem;
+    letter-spacing: 1px;
+    font-weight: 700px;
+    font-weight: bold;
+    align-items: center;
+    width: 10rem;
+    height: 100%;
+    text-transform: uppercase;
+    /* border-left: 1px solid rgba(85, 85, 85, 0.829);
+    border-right: 1px solid rgba(85, 85, 85, 0.829); */
+}
+
+.footer-container2 p {
+    font-size: 0.813rem;
+    color: rgba(187, 187, 187, 0.829);
+}
+
+.footer-container3 p {
+    font-size: 0.688rem;
+    color: rgba(187, 187, 187, 0.829);
+}
+
+@media screen and (max-width: 543px) {
+    .footer-container1 {
+        font-size: 0.6rem;
+    }
+}

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+/* <!-- toda estilização do cabeçalho está aqui --> */
+@import url(./header.css); 
+@import url(./rodapé.css);
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            
+            --cor-de-fundo: linear-gradient(to right, rgb(235, 155, 6), rgb(214, 140, 2), rgb(182, 118, 0), rgb(153, 153, 0));
+            --cor-texto: white;
+            --cor-heroline: linear-gradient(to bottom, rgb(0, 0, 143),rgb(0, 0, 134),rgb(0, 0, 131),rgb(0, 0, 136));
+            --cor-textosaibamais: linear-gradient (to right, white, white ,white, black);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--cor-de-fundo);
+            height: auto;
+            width: 100%;
+            }
+        
+            ::-webkit-scrollbar-track {
+                background-color: white;
+            }
+            ::-webkit-scrollbar {
+                width: 0.938rem;
+                
+            }
+            ::-webkit-scrollbar-thumb {
+                background:rgb(0, 0, 143);
+                border-radius: 0.625rem;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background:rgb(110, 1, 1);
+            }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+            
+
+        .hero { /* Hero Central */
+    
+        background: var(--cor-heroline);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: #5200eb;
+        text-align: center;
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+        margin-top: 7%;
+        margin-bottom: 2%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 6px black;
+        }
+        
+        .hero .div2 { /* Titulo Hero Bar */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        height: 4%;
+        width: 100%;
+        font-size: 3em;
+        }
+
+        #textoPorParagrafo{
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0rem 10rem;
+        }
+
+        .hero .scratch-logo-fly { /* Logo scratch Flutuante */
+            width: 100%;
+            height: 32rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: bannerfly 2s ease-in-out alternate infinite;
+        }
+
+        .hero .scratch-logo-fly img { /* Tamanho da Logo Scratch */
+            width: 60%;
+        }
+
+        .hero-arrastar__criar, .hero-video__customizacao, .hero-dadosprojeto, .hero-introducao, .hero-comoacessar {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 1%;
+            width: 100%;
+            height: auto;
+            padding: 2rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+
+        .hero-introducao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container-introducao__botao {
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+                .hero-introducao__botao {
+                    font-size: 2rem;
+                    font-family: "Poetsen One", sans-serif;
+                    font-weight: 400;
+                    color: #e2dfdfd7;
+                    text-decoration: none;
+                    border: 1px solid white;
+                    border-radius: 16px;
+                    padding: 1rem 6rem;
+                    background-color: #c30bfc;
+                    text-align: center;
+                    animation: piscartexto 2s ease-in-out alternate infinite;
+                    transition: 0.3s ease-in-out;
+                }
+
+                .hero-introducao__botao:hover {
+                    font-size: 2.2em;
+                    border: 3px solid  white;
+                    animation: piscarbtn 0.4s ease-in-out alternate infinite;
+                    color: white;
+                }
+
+        .hero-introducao img, .hero-comoacessar img, .hero-dadosprojeto img , .hero-video__customizacao video, .hero-arrastar__criar img{
+            width: 45%;
+            margin-top: 5%;
+            border-radius: 1.063rem;
+            border: 3px solid rgba(255, 255, 255, 0.719);
+            transition: 0.2s ease-in-out;
+        }
+
+        .hero-introducao img:hover, .hero-dadosprojeto img:hover, .hero-comoacessar img:hover, .hero-video__customizacao video:hover, .hero-arrastar__criar img:hover {
+            box-shadow: 0 0 20px 0 white;
+            border: 0.188rem solid white;
+        }
+
+        .hero-comoacessar p {
+            margin-top: 1%;
+        }
+
+        .hero-saibamais {
+            margin-top: 10%;
+            margin-bottom: 10%;
+            width: 100%;
+            height: 20rem;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            color: white;
+            font-size: 1.5rem;
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(45deg, rgb(235, 155, 6), rgb(141, 92, 0), rgb(116, 75, 0), rgb(143, 143, 0));
+        }
+
+        .btn { /* Button Saiba Mais */
+        display: inline-block;
+        width: 20%;
+        background-color: #ff6600;
+        color: #e2dfdfd7;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-size: 1.2em;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        border: 3px solid  #5e5d5d;
+        transition: 0.3s ease-in-out;
+        animation: piscartexto 2s ease-in-out alternate infinite;
+        }
+
+        .btn:hover {
+            font-size: 1.2em;
+            border: 3px solid  white;
+            animation: piscarbtn 0.4s ease-in-out alternate infinite;
+            color: white;
+        }
+
+      
+@keyframes logofly {
+    0% {
+       transform: translateY(-6%);
+    }
+
+    100% {
+        transform: translateY(6%);
+    }
+}
+@keyframes bannerfly {
+    0% {
+        transform: translateY(-8%);
+     }
+ 
+     100% {
+         transform: translateY(8%);
+     }
+}
+
+@keyframes piscarbtn{
+    0% {
+        border: 3px solid  #333333;
+    }
+    100% {
+        border: 3px solid  white;
+    }
+  }
+  @keyframes piscartexto {
+    0% {
+        color: #c7c7c7;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: #fdde88;
+    }
+    0% {
+        border: 3px solid  #e7d152;
+    }
+    100% {
+        border: 3px solid  #ffffff;
+    }
+  }
+
+  @media screen and (max-width: 543px) {
+    .hero .div2 h1 {
+        margin-top: 3%;
+        font-size: 80%;
+    }
+
+    .hero .scratch-logo-fly img {
+        width: 80%;
+    }
+
+    .hero-introducao{
+        font-size: 1rem;
+    }
+
+    .hero-introducao img {
+        width: 90%;
+    }
+
+    .hero-introducao__botao {
+        padding: 0.5rem 3rem;
+        font-size: 20px;
+    }
+
+    .hero .scratch-logo-fly {
+        height: 20rem;
+    }
+
+    .hero-comoacessar h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-introducao img, .hero-comoacessar img, .hero-dadosprojeto img , .hero-video__customizacao video, .hero-arrastar__criar img {
+        width: 70%;
+        margin-top: 10%;
+    }
+
+    .hero-saibamais {
+        height: 10rem;
+    }
+
+    #textoPorParagrafo {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 50%;
+        padding: 10px 0;
+        font-size: 1.3rem;
+    }
+  }
+  
