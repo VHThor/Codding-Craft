@@ -119,3 +119,21 @@
         border: 3px solid  white;
     }
   }
+
+  @media screen and (max-width: 543px) {
+    .hero-sobre {
+        width: 98%;
+        height: 90%;
+        margin-top: 0;
+        justify-content: start;
+    }
+    main {
+        height: 46.60rem;
+    }
+    .hero__texto {
+        margin-top: 10%;
+        padding: 0 2%;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+    }
+  }

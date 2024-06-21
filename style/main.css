@@ -296,6 +296,12 @@
         width: 50%;
         padding: 10px 0;
         font-size: 1.3rem;
+        animation: piscarbtn 1.1s ease-in-out alternate infinite;
+        color: white;
+    }
+    .hero-introducao__botao {
+        animation: piscarbtn 1.3s ease-in-out alternate infinite;
+        color: white;
     }
   }
   
